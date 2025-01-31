@@ -99,6 +99,9 @@ section {
 .popular-products {
   @apply mt-10 bg-[var(--secondary)] pb-8;
 }
+.popular-products .card-container{
+  @apply justify-center items-center;
+}
 .big-card {
   @apply p-4 px-8 rounded-lg shadow-md relative h-84 sm:max-h-80;
   background: linear-gradient(rgb(84, 205, 84), var(--secondary));

@@ -765,6 +765,10 @@ section {
   background-color: var(--secondary);
   padding-bottom: calc(var(--spacing) * 8);
 }
+.popular-products .card-container {
+  align-items: center;
+  justify-content: center;
+}
 .big-card {
   position: relative;
   height: calc(var(--spacing) * 84);
