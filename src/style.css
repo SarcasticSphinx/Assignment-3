@@ -28,17 +28,50 @@ section {
 }
 
 .hero-page {
-  background: linear-gradient(white, #ffebe3);
+  background: linear-gradient(white, var(--secondary));
 }
 .hero-page h1 {
   @apply mt-10 text-[2.5rem] font-semibold text-center sm:text-5xl;
 }
+.hero-page h1 span {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  from {
+    color: var(--accent);
+  }
+  to {
+    color: var(--secondary);
+  }
+}
 
 .hero-page p {
   @apply opacity-80 text-xl text-center mt-6;
+
 }
+
 .hero-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about */
+.about-us {
+  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-lg gap-6 sm:justify-between sm:px-20;
+}
+.about-content{
+  @apply flex gap-4 flex-col items-center justify-center sm:flex-row;
+}
+.about-img {
+  @apply w-80 sm:w-96;
+}
+.about-text {
+  @apply flex flex-col gap-4 text-center sm:text-left;
+}
+.about-text p {
+  @apply text-lg text-gray-700;
 }
 
 /* services */
