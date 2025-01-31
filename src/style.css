@@ -1,0 +1,229 @@
+@import "tailwindcss";
+:root {
+  --accent: #179800;
+  --secondary: #efebe3;
+  --text: #111111;
+}
+html {
+  font-family: sora;
+}
+section {
+  @apply px-6 sm:px-28;
+}
+.navbar {
+  @apply flex justify-between items-center px-8 py-6 border-b border-[var(--accent)] sm:border-0 sm:px-20;
+}
+.hamburger-icon{
+  @apply text-4xl text-[var(--accent)] sm:hidden;
+}
+
+.nav-links {
+  @apply hidden sm:flex gap-6;
+}
+.nav-options {
+  @apply hidden sm:flex gap-4 items-center;
+}
+.navbar button {
+  @apply border p-2 px-4 rounded-lg;
+}
+
+.hero-page {
+  background: linear-gradient(white, #ffebe3);
+}
+.hero-page h1 {
+  @apply mt-10 text-[2.5rem] font-semibold text-center sm:text-5xl;
+}
+
+.hero-page p {
+  @apply opacity-80 text-xl text-center mt-6;
+}
+.hero-img {
+  width: 100%;
+}
+
+/* services */
+.section-heading {
+  @apply text-2xl font-semibold text-[var(--accent)] pt-8 pb-6 sm:mt-12 sm:mb-10 sm:text-4xl;
+}
+
+.card-container {
+  @apply flex flex-col gap-8 sm:flex-row;
+}
+.card {
+  @apply flex flex-col bg-[var(--secondary)] p-10 rounded-lg justify-center items-center gap-4;
+}
+.card img {
+  @apply w-36 bg-white p-8 rounded-full;
+}
+.card-heading {
+  @apply font-semibold text-xl sm:text-lg;
+}
+.card p {
+  @apply text-center sm:text-sm;
+}
+
+/* popular products */
+.popular-products {
+  @apply mt-10 bg-[var(--secondary)] pb-8;
+}
+.big-card {
+  @apply p-4 px-8 rounded-lg shadow-md relative h-84 sm:max-h-80;
+  background: linear-gradient(rgb(84, 205, 84), var(--secondary));
+}
+.big-card h2 {
+  @apply font-semibold text-2xl text-white mt-12 mb-4;
+}
+.big-card button {
+  @apply bg-white text-[var(--accent)] p-2 px-4 rounded-lg mt-8;
+}
+.big-card img {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  right: 0;
+}
+
+.offer-card-container {
+  @apply grid grid-cols-2 gap-4 sm:grid-cols-3;
+}
+
+.offer-card {
+  @apply flex justify-center items-center bg-white p-3 rounded-lg shadow-md gap-2 sm:px-4;
+}
+
+.offer-card .product-img {
+  @apply w-16 h-16 bg-[var(--secondary)] p-2 
+     rounded-lg;
+}
+
+.rating {
+  @apply flex items-center gap-2 text-sm;
+}
+.rating img {
+  @apply w-3 h-3;
+}
+.product {
+  @apply flex flex-col;
+}
+.offer-card h3 {
+  @apply font-semibold text-sm sm:text-sm;
+}
+
+.product-price {
+  @apply text-sm text-gray-500 sm:text-sm;
+}
+.last-card{
+  @apply hidden sm:flex;
+}
+
+/* arrival and offers */
+.arrival-offers .card-container{
+  @apply sm:grid sm:grid-cols-3 gap-4;
+  grid-template-columns: 2fr 1fr;
+}
+.arrival-card{
+  @apply flex bg-[#115414] p-4 py-6 rounded-lg gap-4 text-white relative items-center;
+}
+.arrival-card-heading{
+  @apply bg-[#63B76D] p-2 rounded-lg text-center font-extralight;
+}
+.arrival-card .item-img {
+  @apply w-36 absolute right-0;
+}
+.arrival-card .card-content{
+  @apply flex flex-col gap-4;
+}
+.arrival-card .card-content img {
+  @apply w-36;
+}
+
+.arrival-card .discount-tag{
+  @apply text-xl;
+}
+.arrival-card .discount-tag span{
+  @apply font-semibold;
+}
+.dawat-card{
+  @apply sm:px-16
+}
+.dawat-card .item-img{
+  @apply sm:w-52;
+}
+.indiana-card{
+  @apply bg-[#102861]
+}
+.indiana-card .item-img{
+  @apply w-24 right-10;
+}
+.indiana-card .card-content img{
+  @apply h-16 w-16;
+}
+.indiana-card .arrival-card-heading{
+  @apply bg-[#2A4D97]
+}
+
+
+/* newsletter */
+
+.newsletter {
+  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-2xl gap-4 sm:flex-row sm:justify-between sm:px-20 ;
+  transform: translateY(-50%);
+}
+.newsletter img {
+  @apply w-80 sm:w-96;
+}
+.newsletter-box {
+  @apply flex flex-col items-center gap-4 sm:items-start;
+}
+.newsletter-box h1 {
+  @apply text-[var(--accent)] text-2xl font-semibold text-center sm:text-left sm:text-black;
+}
+.newsletter-box p {
+  @apply text-center sm:text-left text-black;
+}
+.newsletter-box input {
+  @apply bg-white p-2 rounded-lg w-full
+  sm:w-4/5 text-gray-400;
+}
+.newsletter-box button {
+  @apply bg-[var(--accent)] text-white p-2 px-4 rounded-lg;
+}
+
+/* footer */
+
+footer {
+  @apply bg-[var(--accent)] text-white mt-80 px-6 sm:px-28 sm:mt-80;
+}
+.footer-content {
+  @apply flex flex-col gap-8 sm:grid sm:grid-cols-3 sm:items-center;
+  transform: translateY(-50%);
+}
+
+.footer-content p{
+  @apply opacity-60;
+}
+.footer-logo {
+  @apply flex flex-col items-start sm:items-start;
+}
+.footer-logo img {
+  @apply w-32 mb-4;
+}
+.footer-links {
+  @apply flex flex-col gap-2;
+}
+.footer-links a {
+  @apply mb-2 text-sm;
+}
+
+.follow-us-links {
+  @apply flex flex-col gap-4 mt-8;
+}
+.follow-us-links h1 {
+  @apply font-semibold;
+}
+.social-links {
+  @apply flex gap-4;
+}
+.social-links i {
+  @apply text-2xl;
+}
