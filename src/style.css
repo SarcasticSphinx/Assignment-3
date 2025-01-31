@@ -14,8 +14,9 @@ section {
   @apply flex justify-between items-center px-8 py-6 border-b border-[var(--accent)] sm:border-0 sm:px-20;
 }
 .hamburger-icon{
-  @apply text-4xl text-[var(--accent)] sm:hidden;
+  @apply text-4xl text-[var(--accent)];
 }
+
 
 .nav-links {
   @apply hidden sm:flex gap-6;
@@ -59,7 +60,7 @@ section {
 
 /* about */
 .about-us {
-  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-lg gap-6 sm:justify-between sm:px-20;
+  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-lg sm:justify-between sm:px-20;
 }
 .about-content{
   @apply flex gap-4 flex-col items-center justify-center sm:flex-row;
@@ -100,7 +101,7 @@ section {
   @apply mt-10 bg-[var(--secondary)] pb-8;
 }
 .popular-products .card-container{
-  @apply justify-center items-center;
+  @apply justify-center;
 }
 .big-card {
   @apply p-4 px-8 rounded-lg shadow-md relative h-84 sm:max-h-80;
