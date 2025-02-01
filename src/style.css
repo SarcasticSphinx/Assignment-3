@@ -11,12 +11,11 @@ section {
   @apply px-6 sm:px-28;
 }
 .navbar {
-  @apply flex justify-between items-center px-8 py-6 border-b border-[var(--accent)] sm:border-0 sm:px-20;
+  @apply flex justify-between items-center px-8 py-6 border-b border-[var(--accent)] sm:border-0 sm:px-20 sm:text-xl;
 }
-.hamburger-icon{
+.hamburger-icon {
   @apply text-4xl text-[var(--accent)];
 }
-
 
 .nav-links {
   @apply hidden sm:flex gap-6;
@@ -32,7 +31,7 @@ section {
   background: linear-gradient(white, var(--secondary));
 }
 .hero-page h1 {
-  @apply mt-10 text-[2.5rem] font-semibold text-center sm:text-5xl;
+  @apply mt-10 text-[2.5rem] font-semibold text-center sm:text-6xl;
 }
 .hero-page h1 span {
   animation: colorChange 2s infinite alternate;
@@ -48,8 +47,7 @@ section {
 }
 
 .hero-page p {
-  @apply opacity-80 text-xl text-center mt-6;
-
+  @apply opacity-80 text-xl text-center mt-6 sm:text-xl;
 }
 
 .hero-img {
@@ -62,7 +60,7 @@ section {
 .about-us {
   @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-lg sm:justify-between sm:px-20;
 }
-.about-content{
+.about-content {
   @apply flex gap-4 flex-col items-center justify-center sm:flex-row;
 }
 .about-img {
@@ -72,7 +70,7 @@ section {
   @apply flex flex-col gap-4 text-center sm:text-left;
 }
 .about-text p {
-  @apply text-lg text-gray-700;
+  @apply text-lg text-gray-700 sm:text-xl;
 }
 
 /* services */
@@ -93,130 +91,125 @@ section {
   @apply font-semibold text-xl sm:text-lg;
 }
 .card p {
-  @apply text-center sm:text-sm;
+  @apply text-center ;
 }
 
 /* popular products */
 .popular-products {
   @apply mt-10 bg-[var(--secondary)] pb-8;
 }
-.popular-products .card-container{
+.popular-products .card-container {
   @apply justify-center;
 }
 .big-card {
-  @apply p-4 px-8 rounded-lg shadow-md relative h-84 sm:max-h-80;
+  @apply p-4 px-8 rounded-lg shadow-md relative h-84 sm:h-96 sm:text-lg;
   background: linear-gradient(rgb(84, 205, 84), var(--secondary));
 }
 .big-card h2 {
-  @apply font-semibold text-2xl text-white mt-12 mb-4;
+  @apply font-semibold text-2xl text-white mt-12 mb-4 sm:text-4xl;
 }
 .big-card button {
   @apply bg-white text-[var(--accent)] p-2 px-4 rounded-lg mt-8;
 }
 .big-card img {
-  position: absolute;
-  width: 180px;
-  bottom: 0;
-  right: 0;
+  @apply absolute w-44 bottom-0 right-0 sm:w-52;
 }
 
 .offer-card-container {
-  @apply grid grid-cols-2 gap-4 sm:grid-cols-3;
+  @apply grid grid-cols-2 gap-4 sm:grid-cols-3 ;
 }
 
 .offer-card {
-  @apply flex justify-center items-center bg-white p-3 rounded-lg shadow-md gap-2 sm:px-4;
+  @apply flex justify-center items-center bg-white p-3 rounded-lg shadow-md gap-2 sm:px-4 sm:gap-6;
 }
 
 .offer-card .product-img {
   @apply w-16 h-16 bg-[var(--secondary)] p-2 
-     rounded-lg;
+     rounded-lg sm:w-20 sm:h-20; 
 }
 
 .rating {
-  @apply flex items-center gap-2 text-sm;
+  @apply flex items-center gap-2 text-sm sm:text-lg;
 }
 .rating img {
-  @apply w-3 h-3;
+  @apply w-3 h-3 sm:w-4 sm:h-4 ;
 }
 .product {
   @apply flex flex-col;
 }
 .offer-card h3 {
-  @apply font-semibold text-sm sm:text-sm;
+  @apply font-semibold text-sm sm:text-lg;
 }
 
 .product-price {
-  @apply text-sm text-gray-500 sm:text-sm;
+  @apply text-sm text-gray-500 sm:text-lg;
 }
-.last-card{
+.last-card {
   @apply hidden sm:flex;
 }
 
 /* arrival and offers */
-.arrival-offers .card-container{
+.arrival-offers .card-container {
   @apply sm:grid sm:grid-cols-3 gap-4;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1.5fr;
 }
-.arrival-card{
+.arrival-card {
   @apply flex bg-[#115414] p-4 py-6 rounded-lg gap-4 text-white relative items-center;
 }
-.arrival-card-heading{
-  @apply bg-[#63B76D] p-2 rounded-lg text-center font-extralight;
+.arrival-card-heading {
+  @apply bg-[#63B76D] p-2 rounded-lg text-center font-extralight sm:text-xl;
 }
 .arrival-card .item-img {
   @apply w-36 absolute right-0;
 }
-.arrival-card .card-content{
+.arrival-card .card-content {
   @apply flex flex-col gap-4;
 }
 .arrival-card .card-content img {
-  @apply w-36;
+  @apply w-36 sm:w-48;
 }
 
-.arrival-card .discount-tag{
-  @apply text-xl;
+.arrival-card .discount-tag {
+  @apply text-xl sm:text-2xl;
 }
-.arrival-card .discount-tag span{
+.arrival-card .discount-tag span {
   @apply font-semibold;
 }
-.dawat-card{
-  @apply sm:px-16
+.dawat-card {
+  @apply sm:px-18;
 }
-.dawat-card .item-img{
-  @apply sm:w-52;
+.dawat-card .item-img {
+  @apply sm:w-60;
 }
-.indiana-card{
-  @apply bg-[#102861]
+.indiana-card {
+  @apply bg-[#102861] px-10 py-10;
 }
-.indiana-card .item-img{
-  @apply w-24 right-10;
+.indiana-card .item-img {
+  @apply w-24 right-10 sm:w-36;
 }
-.indiana-card .card-content img{
-  @apply h-16 w-16;
+.indiana-card .card-content img {
+  @apply h-16 w-16 sm:h-24  sm:w-24;
 }
-.indiana-card .arrival-card-heading{
-  @apply bg-[#2A4D97]
+.indiana-card .arrival-card-heading {
+  @apply bg-[#2A4D97];
 }
-
 
 /* newsletter */
 
 .newsletter {
-  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-2xl gap-4 sm:flex-row sm:justify-between sm:px-20 ;
-  transform: translateY(-50%);
+  @apply flex flex-col items-center bg-[var(--secondary)] p-8 rounded-2xl gap-4 sm:flex-row sm:justify-between sm:px-20 translate-y-[-50%];
 }
 .newsletter img {
-  @apply w-80 sm:w-96;
+  @apply w-80 sm:w-112 ;
 }
 .newsletter-box {
   @apply flex flex-col items-center gap-4 sm:items-start;
 }
 .newsletter-box h1 {
-  @apply text-[var(--accent)] text-2xl font-semibold text-center sm:text-left sm:text-black;
+  @apply text-[var(--accent)] text-2xl font-semibold text-center sm:text-left sm:text-black sm:text-4xl;
 }
 .newsletter-box p {
-  @apply text-center sm:text-left text-black;
+  @apply text-center sm:text-left text-black sm:text-lg;
 }
 .newsletter-box input {
   @apply bg-white p-2 rounded-lg w-full
@@ -236,7 +229,7 @@ footer {
   transform: translateY(-50%);
 }
 
-.footer-content p{
+.footer-content p {
   @apply opacity-60;
 }
 .footer-logo {

@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -587,6 +587,10 @@ section {
   @media (width >= 40rem) {
     padding-inline: calc(var(--spacing) * 20);
   }
+  @media (width >= 40rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .hamburger-icon {
   font-size: var(--text-4xl);
@@ -625,8 +629,8 @@ section {
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
 }
 .hero-page h1 span {
@@ -646,6 +650,10 @@ section {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   opacity: 80%;
+  @media (width >= 40rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .hero-img {
   width: 100%;
@@ -695,6 +703,10 @@ section {
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
   color: var(--color-gray-700);
+  @media (width >= 40rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .section-heading {
   padding-top: calc(var(--spacing) * 8);
@@ -751,10 +763,6 @@ section {
 }
 .card p {
   text-align: center;
-  @media (width >= 40rem) {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
 }
 .popular-products {
   margin-top: calc(var(--spacing) * 10);
@@ -773,7 +781,11 @@ section {
   --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   @media (width >= 40rem) {
-    max-height: calc(var(--spacing) * 80);
+    height: calc(var(--spacing) * 96);
+  }
+  @media (width >= 40rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   background: linear-gradient(rgb(84, 205, 84), var(--secondary));
 }
@@ -785,6 +797,10 @@ section {
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: var(--color-white);
+  @media (width >= 40rem) {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
 }
 .big-card button {
   margin-top: calc(var(--spacing) * 8);
@@ -796,9 +812,12 @@ section {
 }
 .big-card img {
   position: absolute;
-  width: 180px;
-  bottom: 0;
-  right: 0;
+  right: calc(var(--spacing) * 0);
+  bottom: calc(var(--spacing) * 0);
+  width: calc(var(--spacing) * 44);
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 52);
+  }
 }
 .offer-card-container {
   display: grid;
@@ -819,6 +838,9 @@ section {
   --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 6);
+  }
+  @media (width >= 40rem) {
     padding-inline: calc(var(--spacing) * 4);
   }
 }
@@ -828,6 +850,12 @@ section {
   border-radius: var(--radius-lg);
   background-color: var(--secondary);
   padding: calc(var(--spacing) * 2);
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 20);
+  }
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 20);
+  }
 }
 .rating {
   display: flex;
@@ -835,10 +863,20 @@ section {
   gap: calc(var(--spacing) * 2);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+  @media (width >= 40rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
 }
 .rating img {
   height: calc(var(--spacing) * 3);
   width: calc(var(--spacing) * 3);
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 4);
+  }
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 4);
+  }
 }
 .product {
   display: flex;
@@ -850,8 +888,8 @@ section {
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 }
 .product-price {
@@ -859,8 +897,8 @@ section {
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-gray-500);
   @media (width >= 40rem) {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 }
 .last-card {
@@ -877,7 +915,7 @@ section {
   @media (width >= 40rem) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1.5fr;
 }
 .arrival-card {
   position: relative;
@@ -897,6 +935,10 @@ section {
   text-align: center;
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
+  @media (width >= 40rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .arrival-card .item-img {
   position: absolute;
@@ -910,10 +952,17 @@ section {
 }
 .arrival-card .card-content img {
   width: calc(var(--spacing) * 36);
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 48);
+  }
 }
 .arrival-card .discount-tag {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
+  @media (width >= 40rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
 }
 .arrival-card .discount-tag span {
   --tw-font-weight: var(--font-weight-semibold);
@@ -921,30 +970,43 @@ section {
 }
 .dawat-card {
   @media (width >= 40rem) {
-    padding-inline: calc(var(--spacing) * 16);
+    padding-inline: calc(var(--spacing) * 18);
   }
 }
 .dawat-card .item-img {
   @media (width >= 40rem) {
-    width: calc(var(--spacing) * 52);
+    width: calc(var(--spacing) * 60);
   }
 }
 .indiana-card {
   background-color: #102861;
+  padding-inline: calc(var(--spacing) * 10);
+  padding-block: calc(var(--spacing) * 10);
 }
 .indiana-card .item-img {
   right: calc(var(--spacing) * 10);
   width: calc(var(--spacing) * 24);
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 36);
+  }
 }
 .indiana-card .card-content img {
   height: calc(var(--spacing) * 16);
   width: calc(var(--spacing) * 16);
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 24);
+  }
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 24);
+  }
 }
 .indiana-card .arrival-card-heading {
   background-color: #2A4D97;
 }
 .newsletter {
   display: flex;
+  --tw-translate-y: -50%;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
   flex-direction: column;
   align-items: center;
   gap: calc(var(--spacing) * 4);
@@ -960,12 +1022,11 @@ section {
   @media (width >= 40rem) {
     padding-inline: calc(var(--spacing) * 20);
   }
-  transform: translateY(-50%);
 }
 .newsletter img {
   width: calc(var(--spacing) * 80);
   @media (width >= 40rem) {
-    width: calc(var(--spacing) * 96);
+    width: calc(var(--spacing) * 112);
   }
 }
 .newsletter-box {
@@ -988,6 +1049,10 @@ section {
     text-align: left;
   }
   @media (width >= 40rem) {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  @media (width >= 40rem) {
     color: var(--color-black);
   }
 }
@@ -996,6 +1061,10 @@ section {
   color: var(--color-black);
   @media (width >= 40rem) {
     text-align: left;
+  }
+  @media (width >= 40rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 }
 .newsletter-box input {
@@ -1174,4 +1243,19 @@ footer {
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
