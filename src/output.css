@@ -822,7 +822,7 @@ section {
 .offer-card-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: calc(var(--spacing) * 4);
+  gap: calc(var(--spacing) * 2);
   @media (width >= 40rem) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -830,7 +830,7 @@ section {
 .offer-card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: calc(var(--spacing) * 2);
   border-radius: var(--radius-lg);
   background-color: var(--color-white);
@@ -860,9 +860,9 @@ section {
 .rating {
   display: flex;
   align-items: center;
-  gap: calc(var(--spacing) * 2);
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  gap: calc(var(--spacing) * 1);
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
   @media (width >= 40rem) {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -883,18 +883,18 @@ section {
   flex-direction: column;
 }
 .offer-card h3 {
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-font-weight: var(--font-weight-semibold);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
   @media (width >= 40rem) {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 }
 .product-price {
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
   color: var(--color-gray-500);
   @media (width >= 40rem) {
     font-size: var(--text-lg);
@@ -980,8 +980,12 @@ section {
 }
 .indiana-card {
   background-color: #102861;
-  padding-inline: calc(var(--spacing) * 10);
-  padding-block: calc(var(--spacing) * 10);
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 10);
+  }
 }
 .indiana-card .item-img {
   right: calc(var(--spacing) * 10);

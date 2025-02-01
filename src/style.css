@@ -116,11 +116,11 @@ section {
 }
 
 .offer-card-container {
-  @apply grid grid-cols-2 gap-4 sm:grid-cols-3 ;
+  @apply grid grid-cols-2 gap-2 sm:grid-cols-3 ;
 }
 
 .offer-card {
-  @apply flex justify-center items-center bg-white p-3 rounded-lg shadow-md gap-2 sm:px-4 sm:gap-6;
+  @apply flex justify-start items-center bg-white p-3 rounded-lg shadow-md gap-2 sm:px-4 sm:gap-6;
 }
 
 .offer-card .product-img {
@@ -129,7 +129,7 @@ section {
 }
 
 .rating {
-  @apply flex items-center gap-2 text-sm sm:text-lg;
+  @apply flex items-center gap-1 text-xs sm:text-lg;
 }
 .rating img {
   @apply w-3 h-3 sm:w-4 sm:h-4 ;
@@ -138,11 +138,11 @@ section {
   @apply flex flex-col;
 }
 .offer-card h3 {
-  @apply font-semibold text-sm sm:text-lg;
+  @apply font-medium text-xs sm:text-lg;
 }
 
 .product-price {
-  @apply text-sm text-gray-500 sm:text-lg;
+  @apply text-xs text-gray-500 sm:text-lg;
 }
 .last-card {
   @apply hidden sm:flex;
@@ -182,7 +182,7 @@ section {
   @apply sm:w-60;
 }
 .indiana-card {
-  @apply bg-[#102861] px-10 py-10;
+  @apply bg-[#102861] sm:px-10 sm:py-10;
 }
 .indiana-card .item-img {
   @apply w-24 right-10 sm:w-36;
